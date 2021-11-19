@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body{
+  background-image: url("../img/bg.png")
+}
+
+
+body{
+	cursor: url("../img/Cake Curssor.cur"), auto;
+}
+
+a:hover{
+cursor: url("../img/Cake Curssor.cur")auto;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(225deg, #ff99aa , white);
+  background-size: 125% 125%;
+  color: #6d392e;
+  font-family:'Patrick Hand', cursive;
+  border-radius: 50px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card {
+  width: 320px;
+  height: 300px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 4px 8px 16px 0 gray;
+}
+.card .left {
+  position: absolute;
+  left: 0;
+  width: 190px;
+  height: 300px;
+  overflow: hidden;
+}
+.card .left .avatar {
+  position: absolute;
+  left: 60px;
+  top: 32px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ff99aa;
+}
+.card .left .avatar .circle {
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+  border: 1px solid;
+}
+.card .left .avatar .circle:first-child {
+  left: -3px;
+  top: -3px;
+  width: 76px;
+  height: 76px;
+  border-color: #6d392e #6d392e #6d392e transparent;
+}
+.card .left .avatar .circle:nth-child(2) {
+  left: -6px;
+  top: -6px;
+  width: 82px;
+  height: 82px;
+  border-color: #6d392e transparent #6d392e #6d392e;
+}
+.card .left .avatar:hover .circle:first-child {
+  transform: rotate(360deg);
+}
+.card .left .avatar:hover .circle:nth-child(2) {
+  transform: rotate(-360deg);
+}
+.card .left .avatar img {
+  width: inherit;
+  height: inherit;
+  display: block;
+  border-radius: inherit;
+}
+.card .left .info {
+  position: absolute;
+  text-align: center;
+  top: 122px;
+  width: 100%;
+  font-family:'Patrick Hand', cursive;
+}
+.card .left .info span {
+  display: block;
+  font-family:'Patrick Hand', cursive;
+  font-size: 15pt;
+}
+.card .left .info span.small {
+  top: 22px;
+  font-family:'Patrick Hand', cursive;
+}
+.card .left .buttons {
+  position: absolute;
+  text-align: center;
+  bottom: 32px;
+  width: 100%;
+  height: 80px;
+  font-family:'Patrick Hand', cursive;
+}
+.card .left .buttons button {
+  padding-top: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #6d392e;
+  width: 120px;
+  height: 26px;
+  margin: 8px 0;
+  background: #ff99aa;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 0 0 1px #b74096;
+  font-family:'Patrick Hand', cursive;
+  
+}
+.card .left .buttons button:hover {
+  background: #d4e7fc;
+  color: #6d392e;
+  font-family:'Patrick Hand', cursive;
+}
+.card .right {
+  position: absolute;
+  right: 0;
+  width: 130px;
+  height: 300px;
+}
+.card .right .stats {
+  position: relative;
+  height: 100px;
+  background: #d4e7fc;
+  color:#6d392e;
+  box-shadow: 0 -1px white;
+ 
+}
+.card .right .stats:nth-child(1){
+  border-radius: 0 20px 0 0;
+}
+.card .right .stats:nth-child(3){
+  border-radius: 0 0 20px 0;
+}
+.card .right .stats:first-child {
+  box-shadow: none;
+}
+.card .right .stats:hover {
+  background: #6d392e;
+  color: white;
+}
+.card .right .stats span.big {
+  top: 30px;
+}
+.card .right .stats span.small {
+  top: 50px;
+}
+
+span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+span.big {
+  font-size: 25px;
+  font-weight: 600;
+}
+span.small {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+span.small1{
+	margin-top: 20px;
+}
+
+.section{
+	padding-top: 40px;
+	padding-left: 30px;
+	margin: auto;
+	
+}
+
+.section a{
+	text-decoration: none;
+	border: 2px solid black;
+	padding: 20px;
+	border-radius: 50%;
+	font-family:'Patrick Hand', cursive;
+	font-weight: 600;
+	font-size: 20pt;
+	color:#6d392e;
+	background: #ff99aa;
+}
+
+.section a:hover{
+	background: #d4e7fc;
+	color: deeppink;
+	box-shadow: 2px 5px 3px 0px gray;
+}
+
